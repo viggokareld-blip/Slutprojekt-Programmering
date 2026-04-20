@@ -1,0 +1,12 @@
+body {
+  font-family: sans-serif;
+}
+
+canvas {
+  border: 1px solid #000;
+  display: block;
+  margin-bottom: 10px;
+}
+button {
+    margin-right:5px;
+}
