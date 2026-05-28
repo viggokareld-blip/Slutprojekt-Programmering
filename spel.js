@@ -500,6 +500,21 @@ document.addEventListener("mousemove", (event) => {
   pointerY = event.clientY - rect.top;
 });
 
+let shootPressed = false;
+
+document.addEventListener("keydown", (e) => {
+    if ((e.code === "Space" || e.button === 0) && !shootPressed) {
+        shootPressed = true;
+        shoot();
+    }
+});
+
+document.addEventListener("keyup", (e) => {
+    if (e.code === "Space" || e.button === 0) {
+        shootPressed = false;
+    }
+});
+
 document.addEventListener("keydown", (event) => {
   const key = event.key.toLowerCase();
 
