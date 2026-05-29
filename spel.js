@@ -533,7 +533,6 @@ document.addEventListener("keydown", (event) => {
 
   if (key === "a") keys.a = true;
   else if (key === "d") keys.d = true;
-});
 
 document.addEventListener("keyup", (event) => {
   const key = event.key.toLowerCase();
